@@ -15,6 +15,7 @@ set showmatch
 set autoread
 set encoding=utf8
 set ffs=unix,dos,mac
+set nrformats=
 colorscheme vividchalk
 
 nnoremap <C-L> :nohl<CR><C-L>
