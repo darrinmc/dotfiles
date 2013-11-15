@@ -1,3 +1,4 @@
+execute pathogen#infect()
 set number
 filetype indent on
 syntax on
@@ -21,6 +22,7 @@ colorscheme vividchalk
 nnoremap <C-L> :nohl<CR><C-L>
 
 command! CD cd %:p:h
+let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " Returns true if paste mode is enabled
 function! HasPaste()
