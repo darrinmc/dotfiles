@@ -20,6 +20,10 @@ set nrformats=
 colorscheme vividchalk
 
 nnoremap <C-L> :nohl<CR><C-L>
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
 
 command! CD cd %:p:h
 let g:ackprg = 'ag --nogroup --nocolor --column'
