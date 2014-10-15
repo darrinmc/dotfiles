@@ -1,9 +1,15 @@
-execute pathogen#infect()
+call pathogen#infect('bundle_github/{}')
+call pathogen#helptags()
+
+set history=200
 set number
 filetype indent on
+filetype plugin on
+set nocompatible
 syntax on
 set shiftwidth=2
 set tabstop=4
+autocmd FileType javascript setlocal tabstop=4 shiftwidth=4
 set expandtab
 set hidden
 " set hlsearch
@@ -17,16 +23,32 @@ set autoread
 set encoding=utf8
 set ffs=unix,dos,mac
 set nrformats=
-colorscheme vividchalk
+set guifont=Consolas:h18
+syntax enable
+set background=dark
+if has('gui_running')
+  set lines=40 columns=135
+  colorscheme solarized 
+endif
 
+set backup
+set backupdir=~/.vim-tmp,~/.tmp,/var/tmp,/tmp
+set backupskip=/tmp/*,/private/tmp/*
+set directory=~/.vim-tmp,~/.tmp,/var/tmp,/tmp
+set writebackup
+
+nnoremap <f5> :!ctags -R --exclude=lib/importers/documentation/src --exclude=log --exclude=.zfs --languages=ruby<CR>
 nnoremap <C-L> :nohl<CR><C-L>
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 command! CD cd %:p:h
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+let g:ctrlp_map = '<c-p>'
 
 " Returns true if paste mode is enabled
 function! HasPaste()
@@ -35,3 +57,5 @@ function! HasPaste()
     en
     return ''
 endfunction
+
+cd /sandbox/dmccarth

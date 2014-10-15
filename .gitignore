@@ -1,1 +1,5 @@
 *.swp
+*.DS_Store
+
+# bundle_github is a directory for cloning vim plugins from github
+bundle_github
