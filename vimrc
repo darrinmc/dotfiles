@@ -1,5 +1,5 @@
+runtime bundle_github/pathogen/autoload/pathogen.vim
 call pathogen#infect('bundle_github/{}')
-call pathogen#helptags()
 
 set history=200
 set number
@@ -58,4 +58,7 @@ function! HasPaste()
     return ''
 endfunction
 
-cd /sandbox/dmccarth
+let hostfile = $HOME . '/.vimrc-' . substitute(hostname(), "\\..*", "", "")
+if filereadable(hostfile)
+  exe 'source ' . hostfile
+endif
