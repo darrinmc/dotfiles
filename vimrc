@@ -62,7 +62,7 @@ function! HasPaste()
     return ''
 endfunction
 
-let hostfile = $HOME . '/.vimrc-' . substitute(hostname(), "\\..*", "", "")
+let hostfile = $HOME . '/.vimrc-local'
 if filereadable(hostfile)
   exe 'source ' . hostfile
 endif
