@@ -30,6 +30,7 @@ if has('gui_running')
   set lines=40 columns=135
   colorscheme solarized 
 endif
+let NERDTreeIgnore = ['\.pyc$']
 
 set backup
 set backupdir=~/.vim-tmp,~/.tmp,/var/tmp,/tmp
@@ -48,6 +49,10 @@ command! CD cd %:p:h
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+" Toggle nerdtree with F6
+map <F6> :NerdTreeToggle<CR>
 
 " Returns true if paste mode is enabled
 function! HasPaste()
