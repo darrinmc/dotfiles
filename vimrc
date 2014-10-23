@@ -52,7 +52,7 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
 " Toggle nerdtree with F6
-map <F6> :NerdTreeToggle<CR>
+map <F6> :NERDTreeToggle<CR>
 
 " Returns true if paste mode is enabled
 function! HasPaste()
