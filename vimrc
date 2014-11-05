@@ -38,6 +38,7 @@ set backupskip=/tmp/*,/private/tmp/*
 set directory=~/.vim-tmp,~/.tmp,/var/tmp,/tmp
 set writebackup
 
+nnoremap <f5> :!ctags -R --exclude=lib/importers/documentation/src --exclude=log --exclude=.zfs --languages=ruby<CR>
 nnoremap <C-L> :nohl<CR><C-L>
 noremap <Up> <Nop>
 noremap <Down> <Nop>
