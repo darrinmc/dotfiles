@@ -12,7 +12,9 @@ set tabstop=4
 autocmd FileType javascript setlocal tabstop=4 shiftwidth=4
 set expandtab
 set hidden
-" set hlsearch
+set hlsearch
+nmap <Esc> <Esc>:nohlsearch<CR>
+
 set ruler
 set nostartofline
 set laststatus=2
@@ -54,6 +56,9 @@ let g:ctrlp_cmd = 'CtrlP'
 
 " Toggle nerdtree with F6
 map <F6> :NERDTreeToggle<CR>
+
+map <leader>re :execute "edit " . $MYVIMRC<CR>
+map <leader>rs :execute "source " . $MYVIMRC<CR>
 
 " Returns true if paste mode is enabled
 function! HasPaste()
