@@ -32,3 +32,4 @@ rails                master   git://github.com/tpope/vim-rails.git              
 ;bundler              master   git://github.com/tpope/vim-bundler.git                  ;https://github.com/tpope/vim-bundler
 ;bufexplorer          master   git://github.com/jlanzarotta/bufexplorer.git          ;https://github.com/jlanzarotta/bufexplorer
 commentary           master   git://github.com/tpope/vim-commentary.git             ;https://github.com/tpope/vim-commentary
+coffeescript         master   git://github.com/kchmck/vim-coffee-script.git         ;https://github.com/kchmck/vim-coffee-script
