@@ -33,3 +33,5 @@ rails                master   git://github.com/tpope/vim-rails.git              
 ;bufexplorer          master   git://github.com/jlanzarotta/bufexplorer.git          ;https://github.com/jlanzarotta/bufexplorer
 commentary           master   git://github.com/tpope/vim-commentary.git             ;https://github.com/tpope/vim-commentary
 coffeescript         master   git://github.com/kchmck/vim-coffee-script.git         ;https://github.com/kchmck/vim-coffee-script
+syntastic            master   git://github.com/scrooloose/syntastic.git           ;https://github.com/scrooloose/syntastic
+html5                master   git://github.com/othree/html5.vim.git               ;https://github.com/othree/html5.vim

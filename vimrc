@@ -6,6 +6,7 @@ set number
 filetype indent on
 filetype plugin on
 set nocompatible
+set noswapfile
 syntax on
 set shiftwidth=2
 set tabstop=4
@@ -26,7 +27,6 @@ set encoding=utf8
 set ffs=unix,dos,mac
 set nrformats=
 set guifont=Consolas:h18
-syntax enable
 set background=dark
 if has('gui_running')
   set lines=40 columns=135
